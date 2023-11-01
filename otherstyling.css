@@ -433,6 +433,10 @@ table tr td {
   width: 90vh;
   height: 3vh;
 }
+.bakingvideo {
+  width: 100vh;
+  border: 3px solid white;
+}
 
 
 
