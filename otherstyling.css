@@ -60,7 +60,7 @@ body {
 } 
 #background {
     background-image: url(donuts.jpeg);
-    background-size: cover;
+    background-size:auto;
 }
 * {
     margin: 0;
@@ -436,6 +436,9 @@ table tr td {
 .bakingvideo {
   width: 60vw;
   border: 3px solid white;
+}
+.credit {
+  color: rgb(255, 255, 255);
 }
 
 
