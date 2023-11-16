@@ -1,20 +1,26 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar { /* Hide scrollbar for Chrome */
+  display: none;
+  overflow: hidden;
+}
 body::-webkit-scrollbar{
   display: none;
+  overflow: hidden;
 }
-.img1 {
-    background-image: url(donuts.jpeg);
-    width: 100%;
-  }
-  .img2 {
-    background-image: url(onedonut.jpeg);
-    width: 100%;
-  }
-  .bg-img {
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+main::-webkit-scrollbar{
+  display: none;
+  overflow: hidden;
 }
+
+/* Code for navbar on each page */
+
 .ul1 {
     width: 100%;
     border-bottom: 2px solid white;
@@ -40,49 +46,27 @@ ul li a {
 }
 nav {
     display: flex;
-    flex: 1;
     flex-wrap: nowrap;
     align-items: center;
     background-color: rgb(243, 188, 214);
     justify-content: space-between;
-    overflow: auto;
     color: white;
     text-align: center;
-    max-height: 100px;
     justify-content:space-between;
 }
 ul li a:hover {
     background-color: rgb(230, 155, 189);
 }
+
+/* End of code for the navbar */
+
 body {
     margin: 0;
     background-color: rgb(255, 255, 255);
 } 
-#background {
-    background-image: url(donuts.jpeg);
-    background-size:auto;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-nav .logo {
-    float: left;
-    text-align: left;
-    font-size: 30px;
-}
-.homebutton img {
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-.p2 {
-    text-align: center;
-    font-size: large;
-    color: black;
-    padding-top: 5%;
-}
+
+/* Backgrounds and text to go on pages */
+
 .bg-text {
   background-color: rgb(243, 188, 214);
   background-color: rgb(243, 188, 214);
@@ -96,43 +80,12 @@ nav .logo {
   padding: 60px;
   text-align: center;
   }
-  .bg-textbackup {
-    background-color: rgb(243, 188, 214);
-    background-color: rgb(243, 188, 214);
-    border: 3px solid #f1f1f1;
-    border-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 65%;
-    padding: 60px;
-    text-align: center;
-  }
   .maintext {
     color: white;
     font-weight: bold;
     text-align: center;
     font-size: 3em;
     font-family:Verdana, Geneva, Tahoma, sans-serif
-  }
-  .bg-text2 {
-    background-color: rgb(243, 188, 214); 
-    background-color: rgba(243, 188, 214); 
-    color: rgb(88, 72, 69);
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 60px;
-    text-align: center;
-    font-size: 1.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .bg-textsmall {
     background-color: rgb(243, 188, 214); 
@@ -150,6 +103,11 @@ nav .logo {
     text-align: center;
     font-size: 1.7em;
   }
+
+  /* End of code for text */
+
+  /* Scroll down arrow that is unused, however is functional */
+
   .scroll-down {
     position: absolute;
     left: 50%;
@@ -175,6 +133,7 @@ nav .logo {
   
   
   /*animated scroll arrow animation*/
+
   @-webkit-keyframes fade_move_down {
     0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
     50%  { opacity: 1;  }
@@ -197,51 +156,10 @@ nav .logo {
     scroll-snap-type: y mandatory;
 }
 
-.background-image {
-    height: 100vh;
-    width: 100%;
-    scroll-snap-align: start;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
+/* end of scroll arrow animation */
 
-#image1 {
-    background-image: url(donuts.jpeg); 
-    opacity: 1;
-}
+/* More background and text for pages */
 
-#image2 {
-    background-image: url(onedonut.jpeg);
-    opacity: 1;
-}
-
-#image3 {
-    background-image: url('image3.jpg');
-    opacity: 1;
-}
-.bg-textpage2 {
-  background-color: rgb(243, 188, 214);
-  background-color: rgb(243, 188, 214);
-  border: 3px solid #f1f1f1;
-  border-color: rgb(255, 255, 255);
-  position: absolute;
-  top: 125%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 65%;
-  padding: 60px;
-  text-align: center;
-}
-.maintextheader {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.75em;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
-}
 .bg-textpage25 {
   background-color: rgb(243, 188, 214);
   background-color: rgb(243, 188, 214);
@@ -262,92 +180,31 @@ nav .logo {
   max-height: 100%;
   line-height: 150%;
 }
+
+/* End of background and text for pages */
+
+/*Image for about us page */
+
 .img-chef {
   width: 60vw;
   border: 3px solid rgb(255, 255, 255);
   margin-top: 15px;
 }
-.locationtext {
-  color: rgb(255, 255, 255);
-  text-align: left;
-  font-size: 2em;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 25px;
-  max-height: 100%;
-  font-weight: bolder;
-}
-@media only screen and (max-width: 600px) {
-  .locationtextbg {
-    background-color: rgb(243, 188, 214);
-    background-color: rgb(243, 188, 214);
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -115vw);
-    z-index: 2;
-    padding: 60px;
-    text-align: center;
-    border: 3px solid white;
-    max-height: 100%;
-    width: 70%;
-  }
-}
-@media only screen and (min-width: 601px) {
-  .locationtextbg {
-    background-color: rgb(243, 188, 214);
-    background-color: rgb(243, 188, 214);
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -75vw);
-    z-index: 2;
-    padding: 60px;
-    text-align: center;
-    border: 3px solid white;
-    max-height: 100%;
-    width: 70%;
-  }
-}
-@media only screen and (min-width: 850px) {
-  .locationtextbg {
-    background-color: rgb(243, 188, 214);
-    background-color: rgb(243, 188, 214);
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -35vw);
-    z-index: 2;
-    padding: 60px;
-    text-align: center;
-    border: 3px solid white;
-    max-height: 100%;
-    width: 70%;
-  }
-}
-.donutsimg {
-  height: 300px;
-  width: 100%;
-  object-fit: cover;
-  filter: blur(2px);
-}
+
+/* Donut image at top of page on majority of pages with page title */
+
 .bg-textdonuts {
   background-image: url(donuts.jpeg);
   width: 100%;
   position: relative;
-  top: 1vh;
+  margin-top: 2vh;
   z-index: 2;
   padding: 14vh;
   text-align: center;
   }
-  .bg-textcontact {
-    background-color: rgb(243, 188, 214);
-    background-color: rgb(243, 188, 214);
-    position: absolute;
-    transform: translate(0%, 13vw);
-    z-index: 2;
-    padding: 60px;
-    text-align: center;
-    max-height: 100%;
-    width: 100%;
-    text-decoration: none;
-  }
+
+/* Extra text Styling */
+
   .maintextsub {
     color: rgb(255, 255, 255);
     text-align: center;
@@ -358,29 +215,41 @@ nav .logo {
     max-height: 100%;
     font-weight: bolder;
   }
+
+/* Email link */
+
 .aemail {
   color: white;
 }
+
+/* Table used for reviews */
+
 table tr td {
   border: 1.5px solid white;
   padding: 70px;
   background-color: rgb(237, 171, 202);
 }
-.reviews {
-  color: white;
-  width: 90em;
-}
+
+/* More code for Reviews table */
+
 .reviewabove{
   color: white;
 }
+
+/* Table used for Suggestions */
+
 .suggestiontable {
   text-align: left;
   color: white;
+  width: 100vw;
 }
 .container {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Slightly edited code of previous code segments placed in a media query for responsiveness */
+
 @media all and (max-width:768px) {
   .calculator tr {   
      display: table;  width:100%;   
@@ -393,7 +262,6 @@ table tr td {
       background-color: rgb(243, 188, 214);
       background-color: rgb(243, 188, 214);
       position: relative;
-      top: 2.5vh;
       z-index: 2;
       padding: 1.2em;
       text-align: center;
@@ -407,13 +275,13 @@ table tr td {
   nav {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
+    flex: 1;
     background-color: rgb(243, 188, 214);
-    justify-content: space-between;
-    overflow: auto;
     color: white;
     text-align: center;
-    max-height: 12.610340479192939vh;
+    height: 100%;
+    position: relative;
+    font-size: 1px;
   }
   nav ul li a {
     color: white;
@@ -425,22 +293,92 @@ table tr td {
     line-height: 0.5vh;
     display: flex;
     flex: 1;
-    justify-content: space-around;
+    height: 100%;
+    position: relative;
   }
 }
+
+/* Even more code for Reviews */
+
 .reviews {
   color: white;
   width: 90vh;
   height: 3vh;
 }
+
+/* Styling for video of dough being neaded */
+
 .bakingvideo {
   width: 60vw;
   border: 3px solid white;
 }
+
+/* Credit for video */
+
 .credit {
   color: rgb(255, 255, 255);
 }
 
+/* Styling of the form on suggestions page */
 
+.suggestionform {
+  text-align: center;
+  color: white;
+}
+.forminput {
+  width: 50vw;
+  font-size: 1.5em;
+  background-color: rgb(237, 171, 202);
+  color: white;
+  border: 2px solid white;
+  padding: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.forminput1 {
+  width: 50vw;
+  font-size: 1.5em;
+  height: 15vh;
+}
+.submitbutton {
+  background-color: rgb(237, 171, 202);
+  border: 3px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.submitbutton:hover {
+  background-color: rgb(229, 144, 184);
+  cursor: pointer;
+}
+.suggestionlabel {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+  margin-bottom: 1.1vh;
+  margin-top: 1.1vh;
+}
+/* End of styling for form */
 
-
+/* Code for contact us table */
+.contacts {
+  color: white;
+  width: 25%;
+  height: 47vh;
+}
+.bg-textpagecontact {
+  background-color: rgb(243, 188, 214);
+  background-color: rgb(243, 188, 214);
+  position: relative;
+  display: flex;
+  top: 2.5vh;
+  padding: 1.1vh;
+  text-align: center;
+  max-height: 100%;
+}
