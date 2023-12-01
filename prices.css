@@ -504,6 +504,61 @@ flex-basis: 20%;
     font-size: 1.2em;
   }
 }
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+/* Code for the donut image on top of most pages */
+.donutimage {
+  height: 35vh;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2vh;
+  color: black;
+}
+
 
 
 

@@ -191,18 +191,6 @@ body {
   margin-top: 15px;
 }
 
-/* Donut image at top of page on majority of pages with page title */
-
-.bg-textdonuts {
-  background-image: url(donuts.jpeg);
-  width: 100%;
-  position: relative;
-  margin-top: 2vh;
-  z-index: 2;
-  padding: 14vh;
-  text-align: center;
-  }
-
 /* Extra text Styling */
 
   .maintextsub {
@@ -329,8 +317,8 @@ table tr td {
   width: 50vw;
   font-size: 1.5em;
   background-color: rgb(237, 171, 202);
-  color: white;
-  border: 2px solid white;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(246, 246, 246);
   padding: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
@@ -381,4 +369,57 @@ table tr td {
   padding: 1.1vh;
   text-align: center;
   max-height: 100%;
+}
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+/* Code for the donut image on top of most pages */
+.donutimage {
+  height: 35vh;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2vh;
 }
