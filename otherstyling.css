@@ -178,7 +178,6 @@ body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   line-height: 25px;
   max-height: 100%;
-  line-height: 150%;
 }
 
 /* End of background and text for pages */
@@ -245,7 +244,14 @@ table tr td {
      }               
   .calculator td {   
      display: table-row; 
-    }       
+    }  
+    .contactcalc tr {   
+      display: table;  width:100%;   
+      border: 5px;
+      }               
+   .contactcalc td {   
+      display: table-row; 
+     }         
     .bg-textpage25 {
       background-color: rgb(243, 188, 214);
       background-color: rgb(243, 188, 214);
