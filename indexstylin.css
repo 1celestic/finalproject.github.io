@@ -1,3 +1,4 @@
+/* Code for fade in animation when opening home page */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -11,9 +12,11 @@
         opacity: 1;
     }
  }
+ /* Hides scrollbar not necessary, just a good precaution */
  body::-webkit-scrollbar{
     display: none;
   }
+/* Code for nav bar */
 .ul1 {
     width: 100%;
     border-bottom: 3px solid white;
@@ -50,6 +53,11 @@ nav {
 ul li a:hover {
     background-color: rgb(230, 155, 189);
 }
+
+/* end of code for navbar */
+
+/* code for body and background */
+
 body {
     margin: 0;
     background-color: rgb(255, 255, 255);
@@ -58,17 +66,17 @@ body {
     background-image: url(donuts.jpeg);
     background-size:cover;
 }
+
+/* Universal code */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-.p2 {
-    text-align: center;
-    font-size: large;
-    color: black;
-    padding-top: 5%;
-}
+
+/* Code for home page main text in center of screen */
+
 .bg-text {
     background-color: rgb(243, 188, 214);
     border: 3px solid #f1f1f1;
@@ -78,70 +86,20 @@ body {
     padding: 60px;
     left: 23vw;
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 19%;
   }
   .maintext {
     color: white;
     font-weight: bold;
     text-align: center;
-    font-size: 3em;
+    font-size: 6vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     animation: fadeIn 2s;
   }
-  .bg-text2 {
-    background-color: rgb(243, 188, 214); 
-    background-color: rgba(243, 188, 214); 
-    color: rgb(88, 72, 69);
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 60px;
-    text-align: center;
-    font-size: 1.9em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .bg-textsmall {
-    background-color: rgb(243, 188, 214); 
-    background-color: rgba(243, 188, 214); 
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 60px;
-    text-align: center;
-    font-size: 1.7em;
-  }
-.img-chef {
-    width: 45%;
-}
+
+/* Previous codes optimized for smaller screen sizes. */
+
 @media all and (max-width:768px) {
-  .calculator tr {   
-     display: table;  width:100%;   
-     border: 5px;
-     }               
-  .calculator td {   
-     display: table-row; 
-    }       
-    .bg-textpage25 {
-      background-color: rgb(243, 188, 214);
-      background-color: rgb(243, 188, 214);
-      position: relative;
-      z-index: 2;
-      padding: 1.2em;
-      text-align: center;
-      max-height: 100%;
-      width: auto;
-    }
     .ul1 {
       width: 100%;
       border-bottom: 3px solid white;
@@ -170,4 +128,27 @@ body {
     height: 100%;
     position: relative;
   }
+  .maintext {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: fadeIn 2s;
+  }
+  .bg-text {
+    background-color: rgb(243, 188, 214);
+    border: 3px solid #f1f1f1;
+    border-color: rgb(255, 255, 255);
+    position: relative;
+    width: 55%;
+    padding: 60px;
+    left: 23vw;
+    text-align: center;
+    margin-top: 25vh;
+  }
+  #background {
+    background-image: url(donuts.jpeg);
+    background-size:auto;
+}
 }
