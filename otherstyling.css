@@ -33,7 +33,7 @@ ul li {
     font-size: 17px;
     text-transform: uppercase;
 }
-ul li a {
+.ul1 li a {
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -43,6 +43,7 @@ ul li a {
     font-size: 0.9em;
     flex: 1;
     overflow: hidden;
+    transition: all .2s ease-in-out;
 }
 nav {
     display: flex;
@@ -298,8 +299,14 @@ table tr td {
   color: white;
   width: 90vh;
   height: 3vh;
+  transition: all .2s ease-in-out;
+  border-radius: 5px;
 }
-
+.reviews:hover {
+  transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+}
 /* Styling for video of dough being neaded */
 
 .bakingvideo {
@@ -365,6 +372,13 @@ table tr td {
   color: white;
   width: 25%;
   height: 47vh;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.contacts:hover {
+  transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
 }
 .bg-textpagecontact {
   background-color: rgb(243, 188, 214);

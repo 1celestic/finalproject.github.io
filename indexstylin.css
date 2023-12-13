@@ -39,6 +39,7 @@ ul li a {
     font-size: 0.9em;
     animation: fadeIn 2s;
     width: auto;
+    transition: all 0.2s ease-in-out;
 }
 nav {
     display: flex;
